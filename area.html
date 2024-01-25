@@ -1,0 +1,26 @@
+<html>
+    <head>
+<script>
+    function calculateArea() {
+                    
+                    let radius = parseFloat(document.getElementById("enter radius").value);
+                    if (!isNaN(radius)) {
+                        
+                        let area = Math.PI*Math.pow(radius, 2);
+
+                        
+                        alert("The area of the square is: " + area);
+                    } 
+                    }
+                
+    
+
+</script>
+    </head>
+
+    <body>
+    Enter a radius:
+    <input type="text" id="enter radius" placeholder="enter a radius">
+    <button onclick="calculateArea()">calculate Area</button>
+    </body>
+</html>
